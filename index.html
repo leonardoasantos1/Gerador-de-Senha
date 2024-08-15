@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="leonardoasantos1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Gerador de senhas, gerador password">
+    <meta name="description" content="Gerador de senhas solicitadas para criar senhas fortes em suas contas online.">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/icone-cadeado.png">
+</head>
+<body>
+    <main class="container-input">
+        <h1 class="titulo-h1">Gerador de Senhas</h1>
+        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+        <button class="button-cta" id="button" onclick="generatePassword()">Gerar senha</button>
+    </main>
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span class="password" onclick="copyPassword()"></span>
+        <span class="tooltip">Clique na senha para copiar.</span>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
